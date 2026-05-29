@@ -5,6 +5,8 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
 
+
+  console.log("App component rendered");
   async function fetchTodos() {
     const response = await axios.get(
       "/todos"
